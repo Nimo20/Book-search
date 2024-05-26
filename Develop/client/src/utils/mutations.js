@@ -1,5 +1,5 @@
 // src/graphql/mutations.js
-import { gql } from '@apollo/client';
+import { gql } from 'graphql-tag';
 
 // Mutation to log in a user
 export const LOGIN_USER = gql`
