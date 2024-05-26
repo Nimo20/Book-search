@@ -11,6 +11,7 @@
     "build": "cd client && npm run build",
     "render-build": "npm install && npm run build"
   },
+  "homepage": "https://Nimo20.github.io/Book-search",
   "keywords": [],
   "author": "",
   "license": "ISC",
