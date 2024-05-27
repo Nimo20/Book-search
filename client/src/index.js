@@ -1,18 +1,12 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
-import App from './App.js'
-import SearchBooks from './pages/SearchBooks.js'
-import SavedBooks from './pages/SavedBooks.js'
+import App from './App';
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <Router>
-    <Routes>
-      <Route path="/" element={<App />}>
-        <Route index element={<SearchBooks />} />
-        <Route path="/saved" element={<SavedBooks />} />
-        <Route path="*" element={<h1 className='display-2'>Wrong page!</h1>} />
-      </Route>
-    </Routes>
-  </Router>
-)
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
