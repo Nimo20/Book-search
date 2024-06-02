@@ -9,6 +9,7 @@
     "@testing-library/user-event": "^13.5.0",
     "apollo-boost": "^0.4.9",
     "bootstrap": "^5.3.3",
+    "express": "^4.19.2",
     "gh-pages": "^6.1.1",
     "graphql-tag": "^2.12.6",
     "jwt-decode": "^4.0.0",
@@ -21,7 +22,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "cross-env PORT=3004 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -46,6 +47,7 @@
   },
   "devDependencies": {
     "@apollo/client": "^3.10.4",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@vitejs/plugin-react": "^4.3.0",
     "cross-env": "^7.0.3",
     "graphql": "^15.8.0",
