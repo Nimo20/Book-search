@@ -7,7 +7,7 @@ export default defineConfig({
     build: {
         outDir: 'dist',
         rollupOptions: {
-            input: 'index.html',
+            input: 'index.js', // Update to point to your JavaScript entry file
         },
     },
 });
